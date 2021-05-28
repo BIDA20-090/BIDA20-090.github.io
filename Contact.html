@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            a{
+              padding-left: 20px;
+              float:left; 
+              color: aliceblue;
+           
+           }
+           ul{
+               list-style-type: none;
+               margin-top: 5px;
+               padding: 0;
+               overflow: hidden;
+               background-color: lightgray;
+           }
+           li {
+              float: left;
+          }
+          li a {
+               display: block;
+               color: white;
+               text-align: center;
+               padding: 14px 16px;
+               text-decoration: none;
+           }
+           li a:hover {
+               background-color: lightyellow;
+           }
+           li a{
+               color:blueviolet;
+               font-family: Arial, Helvetica, sans-serif;
+           }
+           body{
+               min-height: 100vh;
+               display: flex;
+               flex-direction: column;
+               background-color: #C2B4D6;
+               font-family: Arial, Helvetica, sans-serif;
+           }
+           footer{
+               margin-top: auto;
+               background-color: #8a2be2;
+           }
+           form {
+               border: 3px solid #f1f1f1;
+               font-family: Arial;
+            }
+
+           .container {
+               padding: 20px;
+               background-color: #f1f1f1;
+            }
+
+           input[type=text], input[type=submit] {
+               width: 100%;
+               padding: 12px;
+               margin: 8px 0;
+               display: inline-block;
+               border: 1px solid #ccc;
+               box-sizing: border-box;
+            }
+
+          input[type=checkbox] {
+            margin-top: 16px;
+            }
+
+          input[type=submit] {
+            background-color: #8a2be2;
+            color: white;
+            border: none;
+            }
+
+          input[type=submit]:hover {
+           opacity: 0.8;
+            }
+          ​input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        </style>
+    </head>
+    <body>
+        <header style="background-color: blueviolet;padding-top: 1px;">
+            <h1 style="margin-left: 35%; background-color: blueviolet;color: aliceblue;padding-bottom: 10px;">WELCOME TO LONDON</h1>
+            <div class="topnav">
+              <a class="active" href="About.html" style="margin-left:37%; font-size: large;" >About</a>
+              <a href="Index.html" style="font-size: large;">Home</a>
+              <a href="lifestyle.html" style="font-size: large;">Lifestyle</a>
+             ​ <a href="Events.html"style="font-size: large;">Events</a>
+              <a href="Contact.html"style="font-size: large;">Contacts</a>
+            </div> 
+         </header>
+         <ul>
+            <li><a class="active" href="Index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="Contact.html">Contacts</a></li>
+        </ul>
+        <section>
+            <p style="margin-left: 5%;font-size: xxx-large;">Contact us</p>
+            <p style="margin-left: 5%;font-size: larger;"> There you can get in contact with the team at WELCOMETOLONDON.COM directly to use us any feedback you may have or simply just ask us any question about our website.You may even subscribe
+            to our newslatter to stay up to date with all the information about things like events that happen in london.</p>
+            <p style="font-size: larger;">
+                Feel free to contact us at:           
+            </p>
+                <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: larger;">Email: WELOCOMETOLONDON@gmail.com</p>
+        </section>
+        <h2> Give us your feedback</h2>
+        <div class="container">
+            <form action="thankyou.html">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" palceholder="country">
+             
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+
+        <h2>WELCOMETOLONDON.COM Newsletter</h2>
+        <form action="thankyou.html">
+     <div class="container">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Subscribe to our news letter to stay up to date with all the events that are happening in london. We will give you heads up on the best dates to plan your visits to london.</p>
+     </div>
+        <div class="container" style="background-color:white">
+        <input type="text" placeholder="FirstName" name="FirstName" required>
+        <input type="text" placeholder="LastName" name="name" required>
+        <input type="text" placeholder="Email adrdress" name="mail" required>
+        <input type="text" placeholder="Country" name="country" required>
+        <input type="text" placeholder="Region" name="region" required>
+     <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Monthly Newsletter
+      <input type="checkbox" checked="checked" name="subscribe"> Yearly Newsletter
+     </label>
+     </div>
+
+     <div class="container">
+       <input type="submit" value="Subscribe">
+       <a href="thankyou.html"></a>
+     </div>
+     </form>
+    </body>
+</html>
